@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ITF assignment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h2>68070316</h2>
+    <h1>ITF Cats Bank!</h1>
+    <h2>Week 14</h2>
+  </header>
+
+  <div class="container">
+    <div class="intro">
+  <img src="user.webp" width="200" alt="Bank Image">
+  <div class="intro-text">
+    <h1>Welcome to the cat bank!</h1>
+    <h2>I'm the Owner.</h2>
+  </div>
+</div>
+    <textarea id="log" readonly>
+1. Current account balance: 1000, Current cash balance: 1000
+    </textarea>
+
+    <div class="flex">
+      <div class="box">
+        <h2>Account Overview</h2>
+        <div class="account-info">
+          <img src="user.png" width="100" alt="User Image">
+          <div class="details">
+            <p><h3>Account Information</h3><br>
+              Name: Sirithep Bordikarn<br>
+              Type: Savings Account
+            </p>
+          </div>
+        </div>
+
+        <p><b>Balance Information</b><br>
+          Current account balance:
+          <input type="text" id="accountBalance" value="1000" readonly><br>
+          Current cash balance:
+          <input type="text" id="cashBalance" value="1000" readonly><br>
+          <button onclick="updateLog()">Change</button>
+        </p>
+
+        <p><b>Bank Operation</b><br>
+          <select id="operation">
+            <option value="deposit">Deposit</option>
+            <option value="withdraw">Withdraw</option>
+          </select>
+          <input type="number" id="amount" value="1">
+          <button onclick="process()">Proceed</button>
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>Financial Tools</h3>
+        <p><b>Currency Converter</b><br>
+          Input balance: <input type="number" id="inputBalance" value="0"><br>
+          Output balance: <input type="text" id="outputBalance" value="0" readonly><br>
+          Input currency:
+          <select id="currency">
+            <option value="USD">USD</option>
+            <option value="THB">THB</option>
+          </select>
+          <button onclick="convert()">Convert</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
