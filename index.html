@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ITF assignment</title>
+  <title>ITF Assignment</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,60 +15,84 @@
 
   <div class="container">
     <div class="intro">
-  <img src="user.webp" width="250" alt="Bank Image">
-  <div class="intro-text">
-    <h2>Welcome to the cat bank!</h2>
-    <h3>I'm the Owner.</h3>
-  </div>
-</div>
+      <img src="user.webp" width="250" alt="Bank Image">
+      <div class="intro-text">
+        <h2>Welcome to the cat bank!</h2>
+        <h3>I'm the Owner.</h3>
+      </div>
+    </div>
+
     <textarea id="log" readonly>
 1. Current account balance: 1000, Current cash balance: 1000
     </textarea>
 
     <div class="flex">
-      <div class="box">
+
+      <div class="section">
         <h2>Account Overview</h2>
-        <div class="account-info">
-          <img src="user.png" width="100" alt="User Image">
-          <div class="details">
-            <p><b>Account Information</b><br>
-              Name: Sirithep Bordikarn<br>
-              Type: Savings Account
-            </p>
+        <div class="row">
+          <img src="user.png" alt="Account Icon" width="80">
+          <div>
+            <b>Account Information</b>
+            <p>Name: Sirithep Bordikarn</p>
+            <p>Type: Savings Account</p>
           </div>
         </div>
 
-        <p><b>Balance Information</b><br>
-          Current account balance:
-          <input type="text" id="accountBalance" value="1000" readonly><br>
-          Current cash balance:
-          <input type="text" id="cashBalance" value="1000" readonly><br>
-          <button onclick="updateLog()">Change</button>
-        </p>
+        <div class="row">
+          <img src="briefcase.png" alt="Balance Icon" width="80">
+          <div>
+            <b>Balance Information</b>
+            <div class="input-row">
+              <div class="label">
+                <span>Current account</span><br>
+                <p>balance:</p>
+              </div>
+              <input type="text" id="accountBalance" value="1000" readonly>
+            </div>
+            <div class="input-row">
+              <div class="label">
+                <span>Current cash</span><br>
+                <p>balance:</p>
+              </div>
+              <input type="text" id="cashBalance" value="1000" readonly>
+            </div>
+            <button onclick="updateLog()">Change</button>
+          </div>
+        </div>
 
-        <p><b>Bank Operation</b><br>
-          <select id="operation">
-            <option value="deposit">Deposit</option>
-            <option value="withdraw">Withdraw</option>
-          </select>
-          <input type="number" id="amount" value="1">
-          <button onclick="process()">Proceed</button>
-        </p>
+        <div class="row">
+          <img src="toolbox.png" alt="Operation Icon" width="80">
+          <div>
+            <b>Bank Operation</b>
+            <select id="operation">
+              <option value="deposit">Deposit</option>
+              <option value="withdraw">Withdraw</option>
+            </select>
+            <input type="number" id="amount" value="1">
+            <button onclick="process()">Proceed</button>
+          </div>
+        </div>
       </div>
 
-      <div class="box">
-        <h3>Financial Tools</h3>
-        <p><b>Currency Converter</b><br>
-          Input balance: <input type="number" id="inputBalance" value="0"><br>
-          Output balance: <input type="text" id="outputBalance" value="0" readonly><br>
-          Input currency:
-          <select id="currency">
-            <option value="USD">USD</option>
-            <option value="THB">THB</option>
-          </select>
-          <button onclick="convert()">Convert</button>
-        </p>
+      <div class="section">
+        <h2>Financial Tools</h2>
+        <div class="row">
+          <img src="coins.png" alt="Currency Icon" width="80">
+          <div>
+            <b>Currency Converter</b>
+            <p>Input balance: <input type="number" id="inputBalance" value="0"></p>
+            Output balance: <input type="text" id="outputBalance" value="0" readonly></p>
+            <p>Input currency:</p>
+            <select id="currency">
+              <option value="USD">USD</option>
+              <option value="THB">THB</option>
+            </select>
+            <button onclick="convert()">Convert</button>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
