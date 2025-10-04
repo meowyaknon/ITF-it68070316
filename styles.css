@@ -35,6 +35,11 @@ textarea {
 
 .section {
   width: 48%;
+  padding-left: 10px;
+}
+
+.section h2 {
+  font-size: 30px;
 }
 
 .row {
@@ -54,20 +59,19 @@ textarea {
   font-size: 1.1em;
 }
 
-.input-row {
+.balance-input-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
+  margin: 6px 0;
 }
 
-.input-row .label {
-  line-height: 1.2em;
+.balance-input-row label {
+  width: 150px;
 }
 
-.input-row input {
-  margin-top: 0;
-  height: 24px;
+.balance-input-row input {
+  flex: 1;       
 }
 
 .row p {
@@ -75,6 +79,7 @@ textarea {
 }
 
 input, select, button {
+  flex: 0;
   margin: 5px 0;
   padding: 5px;
 }
@@ -102,4 +107,24 @@ button {
 
 .intro-text h3 {
   margin: 5px 0 0;
+}
+
+.converter-input-row {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  gap: 10px;
+}
+
+.converter-input-row label {
+  width: 150px;
+}
+.converter-input-row input {
+  flex: 1;       
+}
+
+.currency-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }

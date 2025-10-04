@@ -43,18 +43,12 @@
           <img src="briefcase.png" alt="Balance Icon" width="80">
           <div>
             <b>Balance Information</b>
-            <div class="input-row">
-              <div class="label">
-                <span>Current account</span><br>
-                <p>balance:</p>
-              </div>
+            <div class="balance-input-row">
+              <label for="accountBalance">Current account balance:</label>
               <input type="text" id="accountBalance" value="1000" readonly>
             </div>
-            <div class="input-row">
-              <div class="label">
-                <span>Current cash</span><br>
-                <p>balance:</p>
-              </div>
+            <div class="balance-input-row">
+              <label for="cashBalance">Current cash balance:</label>
               <input type="text" id="cashBalance" value="1000" readonly>
             </div>
             <button onclick="updateLog()">Change</button>
@@ -70,7 +64,7 @@
               <option value="withdraw">Withdraw</option>
             </select>
             <input type="number" id="amount" value="1">
-            <button onclick="process()">Proceed</button>
+            <br><button onclick="process()">Proceed</button></br>
           </div>
         </div>
       </div>
@@ -80,10 +74,18 @@
         <div class="row">
           <img src="coins.png" alt="Currency Icon" width="80">
           <div>
-            <b>Currency Converter</b>
-            <p>Input balance: <input type="number" id="inputBalance" value="0"></p>
-            Output balance: <input type="text" id="outputBalance" value="0" readonly></p>
-            <p>Input currency:</p>
+        <b>Currency Converter</b>
+        <div class="converter-input-row">
+          <label for="inputBalance">Input balance:</label>
+          <input type="number" id="inputBalance" value="0">
+        </div>
+        <div class="converter-input-row">
+          <label for="outputBalance">Output balance:</label>
+          <input type="text" id="outputBalance" value="0" readonly>
+        </div>
+        <div class="converter-input-row">
+          <label for="currency">Input currency:</label>
+          <div class="currency-controls">
             <select id="currency">
               <option value="USD">USD</option>
               <option value="THB">THB</option>
