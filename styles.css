@@ -57,6 +57,7 @@ textarea {
 
 .section h2 {
   font-size: 33px;
+  color: #FF9A3C;
 }
 
 .row {
@@ -66,16 +67,12 @@ textarea {
   margin-bottom: 30px;
 }
 
-.row img:not(.account-img) {
-  width: 100px;
+.row img {
+  width: 130px;
   height: auto;
   object-fit: contain;
   vertical-align: middle;
   margin-right: 10px;
-}
-
-.account-img {
-  transform: translateX(-10px);
 }
 
 .row b {
