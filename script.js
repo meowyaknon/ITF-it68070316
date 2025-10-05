@@ -9,7 +9,13 @@ function updateLog() {
 }
 
 function process() {
-  let amount = parseInt(document.getElementById("amount").value);
+  let amountInput = document.getElementById("amount");
+  let amount = parseInt(amountInput.value);
+
+  if (isNaN(amount) || amount < 0) {
+    amount = 0;
+    amountInput.value = amount;
+  }
 
   if (selectedOperation === "deposit") {
     if (cashBalance >= amount) {
@@ -86,3 +92,13 @@ window.addEventListener("click", (e) => {
     if (operationList) operationList.style.display = "none";
   }
 });
+
+const amountInput = document.getElementById("amount");
+if (amountInput) {
+  amountInput.setAttribute("min", "0");
+  amountInput.addEventListener("input", () => {
+    if (parseInt(amountInput.value) < 0 || isNaN(amountInput.value)) {
+      amountInput.value = 0;
+    }
+  });
+}
