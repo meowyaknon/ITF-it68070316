@@ -233,7 +233,7 @@ button {
 .custom-select {
   position: relative;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .custom-select .cool {
