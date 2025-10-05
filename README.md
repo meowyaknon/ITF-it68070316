@@ -1,5 +1,2 @@
-# ITF Assignment
-This is an ITF Assignment to create a website based on the instructions.
-
-## Creator
-- Sirithep Bordikarn 68070316
+# I Love Cats :3
+## For trying Some Stuff. <3

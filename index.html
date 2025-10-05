@@ -45,13 +45,13 @@
             <b>Balance Information</b>
             <div class="balance-input-row">
               <label for="accountBalance">Current account balance:</label>
-              <input type="text" id="accountBalance" value="1000" readonly>
+              <input type="text" id="accountBalance" value="1000" class="input-cool" readonly>
             </div>
             <div class="balance-input-row">
               <label for="cashBalance">Current cash balance:</label>
-              <input type="text" id="cashBalance" value="1000" readonly>
+              <input type="text" id="cashBalance" value="1000" class="input-cool" readonly>
             </div>
-            <button onclick="updateLog()">Change</button>
+            <button class="cool" onclick="updateLog()" role="button">Change</button>
           </div>
         </div>
 
@@ -59,12 +59,15 @@
           <img src="toolbox.png" alt="Operation Icon" width="80">
           <div>
             <b>Bank Operation</b>
-            <select id="operation">
-              <option value="deposit">Deposit</option>
-              <option value="withdraw">Withdraw</option>
-            </select>
-            <input type="number" id="amount" value="1">
-            <br><button onclick="process()">Proceed</button></br>
+            <div class="custom-select" id="operationSelect">
+              <button class="cool" id="operationBtn">Deposit ▼</button>
+              <div class="dropdown-list" id="operationList">
+                <div class="dropdown-item" data-value="deposit">Deposit</div>
+                <div class="dropdown-item" data-value="withdraw">Withdraw</div>
+              </div>
+            </div>
+            <input type="number" id="amount" value="1" class="input-cool">
+            <br><button class="cool" onclick="process()" role="button">Proceed</button></br>
           </div>
         </div>
       </div>
@@ -77,22 +80,22 @@
         <b>Currency Converter</b>
         <div class="converter-input-row">
           <label for="inputBalance">Input balance:</label>
-          <input type="number" id="inputBalance" value="0">
+          <input type="number" id="inputBalance" value="0" class="input-cool">
         </div>
         <div class="converter-input-row">
           <label for="outputBalance">Output balance:</label>
-          <input type="text" id="outputBalance" value="0" readonly>
+          <input type="text" id="outputBalance" value="0" class="input-cool" readonly>
         </div>
         <div class="converter-input-row">
           <label for="currency">Input currency:</label>
-          <div class="currency-controls">
-            <select id="currency">
-              <option value="USD">USD</option>
-              <option value="THB">THB</option>
-            </select>
-            <button onclick="convert()">Convert</button>
+          <div class="custom-select" id="currencySelect">
+            <button class="cool" id="dropdownBtn">USD ▼</button>
+            <div class="dropdown-list" id="dropdownList">
+              <div class="dropdown-item" data-value="USD">USD</div>
+              <div class="dropdown-item" data-value="THB">THB</div>
+            </div>
           </div>
-        </div>
+          <button class="cool" onclick="convert()" role="button">Convert</button>
       </div>
 
     </div>
