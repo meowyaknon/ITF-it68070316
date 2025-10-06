@@ -111,10 +111,6 @@ window.addEventListener('load', () => {
   });
 });
 
-document.getElementById("scroll-to-top").addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
 const fadeIn = (audio, duration = 5000) => {
   audio.volume = 0;
   const step = 0.05;
