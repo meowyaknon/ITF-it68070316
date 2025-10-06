@@ -386,7 +386,7 @@ button {
   width: calc(100% - 35px);
   max-width: calc(100% - 35px);
   height: 300px;
-  margin: 20px auto;
+  margin: 38px auto;
   margin-bottom: 40px;
   padding: 16px;
   font-family: "JetBrains Mono", monospace;
@@ -512,4 +512,3 @@ footer {
   color: #555;
   margin-top: 10px;
 }
-
