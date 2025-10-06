@@ -4,8 +4,12 @@
 }
 
 @font-face {
-  font-family: "Determination";
-  src: url("/fonts/determination.ttf") format("tff");
+    font-family: "Determination";
+    src: url("Determination.woff2") format("woff2"),
+        url("Determination.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -550,4 +554,10 @@ footer {
   font-size: 0.85em;
   color: #555;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
 }
