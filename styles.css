@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Determination";
+  src: url("/fonts/determination.ttf") format("tff");
+}
+
 body {
   font-family: "Determination", monospace;
   margin: 0;
@@ -39,8 +49,8 @@ header {
 header.shrink {
   display: flex;
   padding: 0;
-  margin-left: 530px;
-  margin-right: 530px;
+  margin-left: 37%;
+  margin-right: 37%;
   text-align: center;
   background: linear-gradient(135deg, rgba(255, 144, 66, 0.9), rgba(255, 190, 130, 0.9));
 }
