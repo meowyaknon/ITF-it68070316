@@ -7,6 +7,7 @@ body {
   animation: gradientShift 15s ease infinite;
   color: #36395A;
   overflow-x: hidden;
+  cursor: default;
 }
 
 @keyframes gradientShift {
@@ -51,7 +52,6 @@ header.shrink h1 {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
   cursor: pointer;
-  
 }
 
 header.shrink h2 {
@@ -434,6 +434,7 @@ button {
   box-shadow:
     10px 10px 22px rgba(0,0,0,0.25),
     -10px -10px 22px rgba(255,255,255,1);
+    cursor: default;
 }
 
 .cool-textarea:active {
