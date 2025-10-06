@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Determination", monospace;
+  font-family: "Determination";
   margin: 0;
   padding: 0;
   background: linear-gradient(-45deg, #fff6ef, #ffd5a8, #fff0e0, #ffe4c2);
@@ -363,7 +363,7 @@ button {
               #D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395A;
-  font-family: "Determination", monospace;
+  font-family: "Determination";
   font-size: 18px;
   height: 40px;
   padding: 0 16px;
@@ -412,7 +412,7 @@ button {
 
 .dropdown-item {
   padding: 10px;
-  font-family: "Determination", monospace;
+  font-family: "Determination";
   cursor: pointer;
   transition: background .15s, transform .15s;
 }
@@ -431,7 +431,7 @@ button {
   margin: 38px auto;
   margin-bottom: 40px;
   padding: 16px;
-  font-family: "Determination", monospace;
+  font-family: "Determination";
   font-size: 16px;
   border-radius: 12px;
   background: linear-gradient(145deg, #FFFFFF, #EDEDED);
