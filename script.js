@@ -123,3 +123,21 @@ const fadeIn = (audio, duration = 5000) => {
     else clearInterval(interval);
   }, duration * step);
 };
+
+document.getElementById("scroll-to-top").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  const scrollY = window.scrollY;
+
+  const shrinkThreshold = 150;
+  const expandThreshold = 80;
+
+  if (scrollY > shrinkThreshold && !header.classList.contains("shrink")) {
+    header.classList.add("shrink");
+  } else if (scrollY < expandThreshold && header.classList.contains("shrink")) {
+    header.classList.remove("shrink");
+  }
+});
