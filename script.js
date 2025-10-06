@@ -42,7 +42,7 @@ function process() {
 function convert() {
   let input = parseFloat(document.getElementById("inputBalance").value);
   let output = 0;
-  const rate = 36;
+  const rate = 34.5;
 
   if (selectedCurrency === "USD") output = input * rate;
   else output = input / rate;
@@ -102,3 +102,24 @@ if (amountInput) {
     }
   });
 }
+
+window.addEventListener('load', () => {
+  const audio = document.getElementById('bg-music');
+  audio.play().catch(err => {
+    console.log("Autoplay blocked. Waiting for interaction...");
+    document.addEventListener('click', () => audio.play(), { once: true });
+  });
+});
+
+document.getElementById("scroll-to-top").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const fadeIn = (audio, duration = 5000) => {
+  audio.volume = 0;
+  const step = 0.05;
+  const interval = setInterval(() => {
+    if (audio.volume < 1) audio.volume = Math.min(audio.volume + step, 1);
+    else clearInterval(interval);
+  }, duration * step);
+};
