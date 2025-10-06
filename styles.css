@@ -5,15 +5,15 @@
 
 @font-face {
     font-family: "Determination";
-    src: url("Determination.woff2") format("woff2"),
-        url("Determination.woff") format("woff");
+    src: url("/fonts/Determination.woff2") format("woff2"),
+        url("/fonts/Determination.woff") format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 body {
-  font-family: "Determination";
+  font-family: "Determination", monospace;
   margin: 0;
   padding: 0;
   background: linear-gradient(-45deg, #fff6ef, #ffd5a8, #fff0e0, #ffe4c2);
@@ -363,7 +363,7 @@ button {
               #D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395A;
-  font-family: "Determination";
+  font-family: "Determination", monospace;
   font-size: 18px;
   height: 40px;
   padding: 0 16px;
@@ -412,7 +412,7 @@ button {
 
 .dropdown-item {
   padding: 10px;
-  font-family: "Determination";
+  font-family: "Determination", monospace;
   cursor: pointer;
   transition: background .15s, transform .15s;
 }
@@ -431,7 +431,7 @@ button {
   margin: 38px auto;
   margin-bottom: 40px;
   padding: 16px;
-  font-family: "Determination";
+  font-family: "Determination", monospace;
   font-size: 16px;
   border-radius: 12px;
   background: linear-gradient(145deg, #FFFFFF, #EDEDED);
